@@ -1,0 +1,275 @@
+AI CODING PROMPT — “Starry Night” Portfolio for Heet Shripal Kankariya
+
+Prompt:
+
+Create a complete, production-ready portfolio website using React + Vite for the frontend and Node.js + Express for the backend.
+The design should be inspired by Vincent van Gogh’s “Starry Night” — swirling motion, luminous colors, painterly textures, and celestial animation.
+The site represents Heet Shripal Kankariya, who is a student and aspiring web developer/designer.
+🧩 TECH REQUIREMENTS
+
+
+Frontend: React (Vite), Tailwind CSS, Framer Motion, tsparticles (or Three.js) for the animated starry background
+
+
+Backend: Node.js with Express + Nodemailer for contact form handling
+
+
+Deployment Ready: Include package.json scripts and config for local + Vercel/Render deployment
+
+
+Color Palette (Starry Night–inspired):
+
+
+Deep Blue: #0B3D91
+
+
+Star Gold: #FFD700
+
+
+Midnight Blue: #1C1C3C
+
+
+Cream: #F5DEB3
+
+
+
+
+Fonts: Artistic serif for headings, modern sans-serif for body (e.g., Playfair Display + Inter)
+
+
+Animations: Rich, full artistic motion — swirling stars, soft parallax, glowing transitions, hover effects
+
+
+Responsive: Fully responsive for mobile, tablet, and desktop
+
+
+Accessibility: Semantic HTML, alt text, focus outlines, and ARIA attributes
+
+
+
+🎨 PERSONAL DETAILS
+
+
+Name: Heet Shripal Kankariya
+
+
+Tagline: “Crafting art-meets-code web experiences.”
+
+
+Bio:
+“I’m Heet Shripal Kankariya, a student at Father Agnel Institute, Bandra. I believe making mistakes is an essential part of learning, and I enjoy turning that learning into creative, web-based projects that blend design and code.”
+
+
+Profile Image: https://ibb.co/27nzj8Mz
+
+
+Email (contact form destination): heetkankariya7@gmail.com
+
+
+Animation Intensity: Full (dynamic, swirling, artistic)
+
+
+Footer Credit: “Inspired by Van Gogh’s Starry Night.”
+
+
+
+💼 PROJECTS SECTION
+Generate a Projects.jsx component containing the following sample projects:
+
+
+Cosmic Canvas
+
+
+Description: A creative drawing web app where users paint swirling constellations on a virtual night sky.
+
+
+GitHub: https://github.com/heetkankariya/cosmic-canvas
+
+
+Live Demo: https://cosmic-canvas-demo.netlify.app/
+
+
+Image: https://ibb.co/27nzj8Mz
+
+
+
+
+LunaTracker
+
+
+Description: A React-based moon phase and stargazing planner showing real-time lunar data.
+
+
+GitHub: https://github.com/heetkankariya/lunatracker
+
+
+Live Demo: https://lunatracker.netlify.app/
+
+
+Image: https://ibb.co/27nzj8Mz
+
+
+
+
+Aurora Blog
+
+
+Description: A minimalist personal blog engine where posts glow like northern lights.
+
+
+GitHub: https://github.com/heetkankariya/aurora-blog
+
+
+Live Demo: https://aurorablog.vercel.app/
+
+
+Image: https://ibb.co/27nzj8Mz
+
+
+
+
+
+⚙️ STRUCTURE
+Create the following file and folder structure:
+portfolio/
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Hero.jsx
+│   │   │   ├── About.jsx
+│   │   │   ├── Projects.jsx
+│   │   │   ├── ProjectCard.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   └── Footer.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── index.css
+│   │   └── assets/
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── package.json
+│
+├── server/
+│   ├── server.js
+│   ├── package.json
+│   └── .env.example
+│
+├── .gitignore
+└── README.md
+
+
+🧠 FUNCTIONALITY
+
+
+Hero Section: Animated starry sky background, name, tagline, “View My Work” button (smooth scroll to Projects).
+
+
+About Section: Bio with gentle motion and profile image fade-in.
+
+
+Projects Section: Dynamic project cards with hover animations.
+
+
+Contact Section: Validated form with name, email, and message fields. On submit, send POST request to /api/contact handled by Express backend.
+
+
+Footer: Social links + credit line.
+
+
+Dark/Light Theme Toggle: Use useTheme hook (dark by default).
+
+
+
+🧰 BACKEND DETAILS
+
+
+Express app in server/server.js
+
+
+Endpoint: POST /api/contact
+
+
+Use nodemailer to send email to heetkankariya7@gmail.com
+
+
+Include .env.example with:
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email
+SMTP_PASS=your_password
+CONTACT_TO=heetkankariya7@gmail.com
+
+
+
+Add CORS + JSON parsing middleware.
+
+
+Scripts:
+"scripts": {
+  "start": "node server.js",
+  "client": "npm run dev --prefix client",
+  "dev": "concurrently \"npm run start\" \"npm run client\""
+}
+
+
+
+
+📘 README CONTENT
+The generated README.md should include:
+
+
+Installation & setup instructions (npm install, npm run dev)
+
+
+How to run client + backend concurrently
+
+
+How to add SMTP credentials
+
+
+Instructions for deploying to Vercel / Render / Netlify
+
+
+Where to replace placeholder images, text, and links
+
+
+
+🖼️ OUTPUT EXPECTATION
+
+
+Provide all main files (App.jsx, components, tailwind config, vite config, server.js, package.json, README.md`)
+
+
+Code should be clean, modular, commented, and ready to run locally or deploy.
+
+
+Include basic particle/star animation setup in the Hero section.
+
+
+Use placeholders where custom assets are not provided.
+
+
+Project must run with npm install and npm run dev.
+
+
+
+🪄 FINAL GOAL
+Deliver a fully functional “Starry Night”–themed portfolio for Heet Shripal Kankariya — artistic, responsive, animated, and easy to customize, with a backend contact form and Git-ready folder structure.
+
+
+💡 How to use it:
+
+
+Copy this entire prompt and paste it into ChatGPT, Replit Ghostwriter, Cursor IDE, or Copilot Chat.
+
+
+It will generate all project files (frontend + backend).
+
+
+Then you can upload it directly to Replit, VS Code, or GitHub.
+
+
+
+Would you like me to run this prompt for you and output the actual project source code (React + Node.js) right here next?
+That way, you can copy the code directly into your Replit or GitHub repository.
